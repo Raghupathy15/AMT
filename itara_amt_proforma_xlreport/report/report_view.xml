@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <report
+            id="action_proforma_report"
+            string="Proforma Report"
+            model="sale.order"
+            report_type="xlsx"
+            file="itara_amt_proforma_xlreport.proformareport.xlsx"
+            name="itara_amt_proforma_xlreport.proformareport.xlsx"
+            attachment_use="False" />
+    </data>
+</odoo>

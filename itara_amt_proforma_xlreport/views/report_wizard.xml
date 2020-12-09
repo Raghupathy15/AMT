@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="proforma_inv_form_view" model="ir.ui.view">
+            <field name="name">proforma.form</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="arch" type="xml">         
+                <xpath expr="/form/header/button[@name='action_confirm']" position="after">
+                    <button string="Proforma Invoice Report" type="object" class="oe_highlight" name="generate_xls_report" invisible ="1" />
+                </xpath>
+            </field>        
+        </record>
+    </data>
+</odoo>
